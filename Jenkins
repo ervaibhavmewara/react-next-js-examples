@@ -10,7 +10,7 @@ pipeline {
         }    
         stage("deploy") {
             steps {
-                   sh "pm2 restart react-next || pm2 start --yarn name react-next --start -p 4040"
+                   sh "pm2 restart app || pm2 start --yarn name app --start -p 4040"
                   
 
             } 
